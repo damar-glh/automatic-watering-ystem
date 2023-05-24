@@ -10,9 +10,9 @@
 //Initialize the LCD display
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-char auth[] = "lGP6cpN_SjbTlVvZp-04WlSSPVKbHLqp";//Enter your Auth token
-char ssid[] = "SriTu Hobby";//Enter your WIFI name
-char pass[] = "E8302b15";//Enter your WIFI password
+char auth[] = "";//Enter your Auth token
+char ssid[] = "";//Enter your WIFI name
+char pass[] = "";//Enter your WIFI password
 
 BlynkTimer timer;
 bool Relay = 0;
