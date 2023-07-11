@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "author": "Damar 01",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 159.8, "left": 275.53, "attrs": {} },
+      {
+        "type": "wokwi-lcd1602",
+        "id": "lcd1",
+        "top": 414.08,
+        "left": 206.05,
+        "attrs": { "pins": "i2c" }
+      },
+      {
+        "type": "wokwi-dht22",
+        "id": "dht1",
+        "top": 150.6,
+        "left": 436.98,
+        "attrs": { "temperature": "-1.5", "humidity": "56.5" }
+      },
+      { "type": "wokwi-servo", "id": "servo1", "top": 181.38, "left": 610.18, "attrs": {} },
+      {
+        "type": "wokwi-buzzer",
+        "id": "bz1",
+        "top": 87.43,
+        "left": 136.28,
+        "attrs": { "volume": "0.1" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r1",
+        "top": 230.48,
+        "left": 174.33,
+        "attrs": { "value": "100" }
+      }
+    ],
+    "connections": [
+      [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+      [ "esp:3V3", "lcd1:VCC", "red", [ "h40.21", "v57.71", "h-248.86", "v79.57" ] ],
+      [ "esp:GND.1", "lcd1:GND", "black", [ "h30.68", "v58.74", "h-221.33", "v78.54" ] ],
+      [ "esp:D22", "lcd1:SCL", "orange", [ "h51.79", "v192.68", "h-270.47", "v88.1" ] ],
+      [ "esp:D21", "lcd1:SDA", "green", [ "h43.1", "v174.64", "h-243.31", "v67.74" ] ],
+      [ "esp:GND.1", "dht1:GND", "black", [ "h0" ] ],
+      [ "dht1:SDA", "esp:D15", "green", [ "v0" ] ],
+      [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+      [ "servo1:GND", "esp:GND.1", "black", [ "h-78.58", "v77.42" ] ],
+      [ "servo1:V+", "esp:3V3", "red", [ "h-52.5", "v77.44", "h-180.85" ] ],
+      [ "servo1:PWM", "esp:D18", "purple", [ "h-37.36", "v61.21", "h-161.61", "v-70.09" ] ],
+      [ "esp:D12", "r1:2", "red", [ "h0" ] ],
+      [ "bz1:1", "esp:GND.2", "green", [ "v0" ] ],
+      [ "bz1:2", "r1:1", "red", [ "v0" ] ]
+    ],
+    "dependencies": {}
+  }
