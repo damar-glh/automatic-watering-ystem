@@ -1,0 +1,12 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+# Automatically added based on includes:
+LiquidCrystal I2C
+
+LiquidCrystal_I2C_Hangul
+DHT sensor library for ESPx
+ESP32Servo
+ESP32_PWM
+Servo
+TonePitch
