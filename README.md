@@ -1,9 +1,7 @@
-Simulator:
-# Wokwi  
-* <a>https://wokwi.com/projects/369862341336758273</a>
+# Simulator:
+* Wokwi : <a>https://wokwi.com/projects/369862341336758273</a>
 
-# Tinkercad  
-* <a>https://www.tinkercad.com/things/4xlab8zi8PN</a>
+* Tinkercad : <a>https://www.tinkercad.com/things/4xlab8zi8PN</a>
 
 # SerialESP8266wifi
 A simple ESP8266 Arduino library with built in re-connect functionality.
