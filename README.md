@@ -1,3 +1,7 @@
+Simulator:
+# Wokwi : <a>https://wokwi.com/projects/369862341336758273</a>
+# Tinkercad : <a>https://www.tinkercad.com/things/4xlab8zi8PN</a>
+
 # SerialESP8266wifi
 A simple ESP8266 Arduino library with built in re-connect functionality.
 * The ESP8266 is a dirtcheap wifimodule. I got mine for about 2.50 US including shipping at Aliexpress. Read about it here: https://nurdspace.nl/ESP8266
